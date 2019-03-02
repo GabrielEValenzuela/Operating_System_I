@@ -12,12 +12,12 @@ subconjunto de la información disponible */proc*.
 Ing. Pablo Martínez
 
 ## Esquema del proyecto
+```bash
 
 Laboratory_1
-|
-|_ _ _ src
-|
-|_ _ _ test
+├── README.md
+├── src
+└── test
 
 ## Informe
 @To Do LINK to report
