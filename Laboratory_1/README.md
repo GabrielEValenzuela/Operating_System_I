@@ -14,8 +14,10 @@ Ing. Pablo Martínez
 ## Esquema del proyecto
 
 Laboratory_1
-├── src
-└── test
+|
+|_ _ _ src
+|
+|_ _ _ test
 
 ## Informe
 @To Do LINK to report
