@@ -1,5 +1,4 @@
-# Trabajo de Laboratorio N°III: Desarrollo de módulos para el Kernel de 
-Linux
+# Trabajo de Laboratorio N°III: Desarrollo de módulos para el Kernel de Linux
 
 ## Descripción
 
