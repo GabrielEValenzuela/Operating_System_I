@@ -1,6 +1,6 @@
 /**
    \file documentation.h
-   \brief Introduction
+   \brief Documentation of the project
      
 	  Laboratory number one: Cration of a ksmap software
 
