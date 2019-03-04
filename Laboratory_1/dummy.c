@@ -1,27 +1,29 @@
 #include <stdio.h>
 #include <pthread.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+
 #define NUM_THREADS 5
 
-void *print_hello(void * bha){
-
-printf("Hello World! It’s me, thread #\n");
+char* print_upper(char *string, size_t lenght){
+	char *upper;
+	printf("%d\n", sizeof(string)/sizeof(*string));
+	printf("Este el tamaño de sting\n");
+	printf("%d\n",lenght );
+	upper = malloc(lenght);
+	for (int i = 0; i < lenght; ++i)
+	{
+		upper[i] = toupper(string[i]);
+	}
+	printf("%s\n",upper);
+	return upper;
 }
 
 int main (int argc, char *argv[]) {
-pthread_t threads[NUM_THREADS];
-int rc;
-long t;
-for (t = 0; t < NUM_THREADS; t++) {
-printf("In main: creating thread %ld\n", t);
-rc = pthread_create(threads + t, NULL, print_hello, NULL);
-if (rc) {
-printf("ERROR; return code from pthread_create() is %d\n", rc);
-return -1;}
+	char test  [] = "los guardianes de la galaxia 2\tHola mundo\tiRoN MaN";
+	char **tokens;
+	char *result = strtok_r(print_upper(test,sizeof(test)/sizeof(*test)),"\t",&tokens);
+	printf("%s\n",result);
 
-}
-/* wait for all threads to complete */
-for (t = 0; t < NUM_THREADS; t++) {
-	pthread_join(threads[t], NULL);
-}
-pthread_exit(NULL);
 }
