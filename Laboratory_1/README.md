@@ -4,7 +4,7 @@
 
 El trabajo de laboratorio consiste en un programa sencillo, donde se 
 muestre como a través del sistema de archivos virtual **/proc** de Linux. Se 
-deberá generar la utilidad **_ksmap_** que muestra de diversas formas algún 
+deberá generar la utilidad **_ksamp_** (Kernel Sampler) que muestra de diversas formas algún 
 subconjunto de la información disponible **/proc**.
 
 ## Docente a cargo
