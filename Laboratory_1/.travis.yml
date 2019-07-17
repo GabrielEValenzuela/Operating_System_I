@@ -9,5 +9,3 @@ script:
   - ./ksamp -l 5 15
   - ./ksamp -f 5 15
   - ./ksamp -ñ
-  
-  
