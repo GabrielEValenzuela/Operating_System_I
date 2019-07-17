@@ -1,0 +1,13 @@
+language: c
+
+compiler: gcc
+
+script: 
+  - cd ${TRAVIS_BUILD_DIR}
+  - cmake && make
+  - ./ksamp -s
+  - ./ksamp -l 5 15
+  - ./ksamp -f 5 15
+  - ./ksamp -ñ
+  
+  
